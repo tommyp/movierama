@@ -11,7 +11,8 @@ RSpec.describe 'vote on movies', type: :feature do
   before do
     author = User.create(
       uid:  'null|12345',
-      name: 'Bob'
+      name: 'Bob',
+      email: 'bob@movierama.dev'
     )
     Movie.create(
       title:        'Empire strikes back',

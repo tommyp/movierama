@@ -1,9 +1,12 @@
 - name: John McFoo
   uid:  'null|johnmcfoo'
+  email: johnmcfoo@movierama.dev
 - name: Alice Wallace
   uid:  'null|alice'
+  email: alice@movierama.dev
 - name: Bob Ablleton
   uid:  'null|bob'
+  email: bob@movierama.dev
 - name: Charlie O'Callaghan
   uid:  'null|charlie'
-
+  email: charlie@movierama.dev
