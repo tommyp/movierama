@@ -1,0 +1,27 @@
+!!!
+%html
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+  %body{style: "width: 100%; margin: 0 auto; background: #e5ffff"}
+    %table{style: "max-width: 600px; width: auto; margin: 0 auto; background: #fff; border: 1px solid #e5f2ff; display: block; padding: 40px 20px;", cellpadding: "5"}
+      %tbody{style: "font-family: 'Helvetica Neue', Ariel, Sans-serif;"}
+        %tr
+          %td
+            A little email from
+            %h2{style: "margin-top: 5px;"} MovieRama
+        %tr
+          %td
+            Hey #{@author.name},
+        %tr
+          %td
+            #{@voting_user.name}
+            #{@like_or_hate_verb}
+            #{@movie.title}.
+            %br/
+
+        %tr
+          %td
+            %small
+              Hope you have a great day!
+              %br/
+              The MovieRama Team

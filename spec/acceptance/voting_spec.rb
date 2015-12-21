@@ -41,7 +41,7 @@ RSpec.describe 'vote on movies', type: :feature do
     it 'can like' do
       page.like('Empire strikes back')
       expect(page).to have_vote_message
-      expect(ActionMailer::Base.deliveries.count).to eq(1)
+      expect(ActionMailer::Base.deliveries.length).to eq(1)
       expect(ActionMailer::Base.deliveries.first.subject).to eq('John McFoo liked Empire strikes back')
       expect(ActionMailer::Base.deliveries.first.to).to include('bob@movierama.dev')
     end
@@ -49,7 +49,7 @@ RSpec.describe 'vote on movies', type: :feature do
     it 'can hate' do
       page.hate('Empire strikes back')
       expect(page).to have_vote_message
-      expect(ActionMailer::Base.deliveries.count).to eq(1)
+      expect(ActionMailer::Base.deliveries.length).to eq(1)
       expect(ActionMailer::Base.deliveries.first.subject).to eq('John McFoo hated Empire strikes back')
       expect(ActionMailer::Base.deliveries.first.to).to include('bob@movierama.dev')
     end
