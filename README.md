@@ -72,3 +72,9 @@ If not, you'll need to get your own OAuth tokens from Github and edit
 So you know what to expect. This app's just a toy, remember?
 
 ![](https://dl.dropboxusercontent.com/spa/cbazgcyvth7jydp/-4eusn-o.png)
+
+### Sending emails
+
+To send emails you need to run sidekiq:
+
+`bundle exec sidekiq`

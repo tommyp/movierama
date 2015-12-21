@@ -28,7 +28,7 @@ class VotingBooth
   private
 
   def _notify_author(like_or_hate)
-    VoteMailer.notify_author(@movie.id, @user.id, like_or_hate).deliver
+    VoteMailer.delay.notify_author(@movie.id, @user.id, like_or_hate)
   end
 
   def _update_counts
